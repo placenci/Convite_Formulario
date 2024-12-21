@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Convite para Evento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="icons/Logo.svg" alt="Logo" class="logo">
+            <h1>Festivite</h1>
+            <img src="icons/Background.svg" alt="Bolo" class="bolo">
+        </div>
+        <div class="right-panel">
+          <h2><img src="icons/calendar.svg" alt="icone do calendario">Sobre o Evento</h2>
+                      
+            <form>
+                <div class="form-group">
+                    <label for="nome-evento">Nome do Evento:</label>
+                    <input type="text" id="nome-evento" name="nome-evento" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="data-inicio">Início:</label>
+                        <input type="date" id="data-inicio" name="data-inicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-fim">Fim:</label>
+                        <input type="date" id="data-fim" name="data-fim" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo">Tipo:</label>
+                        <select id="tipo" name="tipo">
+                            <option value="presencial">Presencial</option>
+                            <option value="online">Online</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="local">Local/Link:</label>
+                        <input type="text" id="local" name="local" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição do Evento:</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                </div>
+                
+                <h2><img src="icons/paintbrush-vertical.svg" alt="paint">Tema do Evento</h2>
+                <div class="form-group">
+                    <input type="file" id="foto-capa" name="foto-capa" accept="image/*">
+                </div>
+                <h2><img src="icons/contact.svg" alt="contato">Dados do Contato</h2>
+                <div class="form-group">
+                    <label for="nome-contato">Nome:</label>
+                    <input type="text" id="nome-contato" name="nome-contato" required>
+                    <span class="required">&#128110; Campo obrigatório</span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e concordo com os termos e condições e com a política de privacidade.</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="email-promocoes" name="email-promocoes">
+                    <label for="email-promocoes">Aceito receber atualizações e promoções por e-mail.</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="sms-promocoes" name="sms-promocoes">
+                    <label for="sms-promocoes">Aceito receber atualizações e promoções por SMS.</label>
+                </div>
+                <button type="submit" class="btn-gerar">Gerar Convite</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
